@@ -1,4 +1,14 @@
 ### Create a new user
+POST http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{
+    "email": "thisisme@gmail.com",
+    "password": "jojojo"
+}
+
+
+### Sign in
 POST http://localhost:3000/auth/signin
 Content-Type: application/json
 
@@ -6,6 +16,12 @@ Content-Type: application/json
     "email": "amani10@gmail.com",
     "password": "jojojo"
 }
+
+### Sign out
+POST http://localhost:3000/auth/signout
+
+### Get currently signin user
+GET http://localhost:3000/auth/me
 
 
 ### Find user by Id
